@@ -10,7 +10,6 @@ import Foundation
 protocol RandomUserPresenterProtocol: AnyObject {
     func setViewController(_ viewController: RandomUserViewControllerProtocol)
     func requestRandomUser()
-    func processGenerateRandomUser()
 }
 
 class RandomUserPresenter {
@@ -23,15 +22,10 @@ class RandomUserPresenter {
     
     var searchUseCase: SearchUseCaseProtocol
     
-    var randomUsersToDisplay: [RandomUserToDisplay] = []
-    
     init(searchUseCase: SearchUseCaseProtocol){
         self.searchUseCase = searchUseCase
     }
     
-    func clearInformation() {
-        self.randomUsersToDisplay = []
-    }
 }
 
 extension RandomUserPresenter: RandomUserPresenterProtocol {
@@ -42,13 +36,12 @@ extension RandomUserPresenter: RandomUserPresenterProtocol {
     
     func requestRandomUser() {
         viewController?.disableNewUserGeneratorButton()
-        searchUseCase.executeSearch {[weak self] randomUsers in
+        searchUseCase.executeSearch {[weak self] randomUser in
             guard let self = self, let controller = self.viewController else {
                 return
             }
-            self.randomUsersToDisplay = randomUsers
             controller.enableNewUserGeneratorButton()
-            controller.reloadView()
+            controller.reloadView(with: randomUser)
         } onError: { [weak self] errorThrown in
             guard let self = self, let controller = self.viewController else {
                 return
@@ -56,10 +49,5 @@ extension RandomUserPresenter: RandomUserPresenterProtocol {
             controller.enableNewUserGeneratorButton()
             controller.alertDownloadFailed()
         }
-    }
-    
-    func processGenerateRandomUser() {
-        self.clearInformation()
-        self.requestRandomUser()
     }
 }

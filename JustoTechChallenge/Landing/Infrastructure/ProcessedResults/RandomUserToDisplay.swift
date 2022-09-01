@@ -12,7 +12,6 @@ struct RandomUserToDisplay: Codable, Equatable {
     let name: String
     let address: String
     let location: String
-    let zipcode: Int
     let email: String
     let username: String
     let password: String

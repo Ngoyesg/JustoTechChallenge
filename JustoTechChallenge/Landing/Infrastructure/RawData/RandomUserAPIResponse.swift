@@ -8,12 +8,8 @@
 import Foundation
 
 struct RandomUserAPIResponse: Codable, Equatable {
-    let users: [RandomUserInfo]
-    let information: PaginationInfo
-    
-    private enum CodingKeys: String, CodingKey {
-        case users = "results", information = "info"
-    }
+    let results: [RandomUserInfo]
+    let info: PaginationInfo
 }
 
 struct PaginationInfo: Codable, Equatable {
@@ -48,14 +44,15 @@ struct Name: Codable, Equatable {
 struct Location: Codable, Equatable {
     let street: Address
     let coordinates: Coordinates
-    let timeZone: Timezone
-}
-
-struct Address: Codable, Equatable {
+    let timezone: Timezone
     let city: String
     let state: String
     let country: String
-    let postcode: Int
+}
+
+struct Address: Codable, Equatable {
+    let number: Int
+    let name: String
 }
 
 struct Coordinates: Codable, Equatable {
@@ -79,11 +76,11 @@ struct Birthdate: Codable, Equatable {
 
 struct Identification: Codable, Equatable {
     let name: String
-    let value: String
+    let value: String?
 }
 
 struct Picture: Codable, Equatable {
-    let thumbnail: String
+    let large: String
 }
 
 struct Registration: Codable, Equatable {

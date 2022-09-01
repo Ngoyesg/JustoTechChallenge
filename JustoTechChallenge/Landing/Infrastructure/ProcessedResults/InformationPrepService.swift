@@ -25,19 +25,21 @@ extension InformationPrepService: InformationPrepServiceProtocol {
         
         let fullname = "\(user.name.title) \(user.name.first) \(user.name.last)"
 
-        let address = "\(user.location.street.city)  \(user.location.street.state)  \(user.location.street.country)"
+        let address = "\(user.location.street.name) \(user.location.street.number), \(user.location.city) -\(user.location.state). \(user.location.country)"
         
-        let location = "\(user.location.coordinates.latitude) - \(user.location.coordinates.longitude)"
-        
-        let zipcode = user.location.street.postcode
+        let location = "(\(user.location.coordinates.latitude) ) - (\(user.location.coordinates.longitude))"
         
         let birthdate = "\(user.birthDate.date.prefix(Constant.dateLength))"
         
         let registeredSince = "\(user.registered.date.prefix(Constant.dateLength))"
         
-        let id = "\(user.id.name) - \(user.id.value)"
+        var id = "Unknown ID"
         
-        return RandomUserToDisplay(gender: user.gender, name: fullname, address: address, location: location, zipcode: zipcode, email: user.email, username: user.login.username, password: user.login.password, birthdate: birthdate, registeredSince: registeredSince, phone: user.phone, cell: user.cell, id: id, picture: thumbnail, nationality: user.nationality)
+        if let value = user.id.value {
+            id = "\(user.id.name) - \(value)"
+        }
+        
+        return RandomUserToDisplay(gender: user.gender, name: fullname, address: address, location: location, email: user.email, username: user.login.username, password: user.login.password, birthdate: birthdate, registeredSince: registeredSince, phone: user.phone, cell: user.cell, id: id, picture: thumbnail, nationality: user.nationality)
     }
     
 }

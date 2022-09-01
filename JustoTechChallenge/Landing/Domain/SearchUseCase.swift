@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SearchUseCaseProtocol: AnyObject {
-    func executeSearch(onSuccess: @escaping ([RandomUserToDisplay])-> (Void), onError: @escaping (WebServiceError)->(Void))
+    func executeSearch(onSuccess: @escaping (RandomUserToDisplay)-> (Void), onError: @escaping (WebServiceError)->(Void))
 }
 
 class SearchUseCase {
@@ -22,7 +22,7 @@ class SearchUseCase {
     }
     
     
-    func processResponse(with infoToProcess: RandomUserAPIResponse, onSuccess: @escaping ([RandomUserToDisplay])-> (Void), onError: @escaping (WebServiceError)->(Void)){
+    func processResponse(with infoToProcess: RandomUserAPIResponse, onSuccess: @escaping (RandomUserToDisplay)-> (Void), onError: @escaping (WebServiceError)->(Void)){
         
         getDisplayableUserService.executeSearch(with: infoToProcess) { [weak self] usersToReturn in
             guard let self = self else {
@@ -40,7 +40,7 @@ class SearchUseCase {
 
 extension SearchUseCase: SearchUseCaseProtocol {
     
-    func executeSearch(onSuccess: @escaping ([RandomUserToDisplay])-> (Void), onError: @escaping (WebServiceError)->(Void)) {
+    func executeSearch(onSuccess: @escaping (RandomUserToDisplay)-> (Void), onError: @escaping (WebServiceError)->(Void)) {
         
         getUserInfoService.getRandomUserInformation { [weak self] apiResponse in
             guard let self = self else {

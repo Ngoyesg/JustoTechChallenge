@@ -6,30 +6,48 @@
 //
 
 import XCTest
+@testable import JustoTechChallenge
 
 class RandomUserPresenterTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var sut: RandomUserPresenter!
+    private var fakeSearchUseCase: FakeSearchUseCase!
+    
+    override func setUp() {
+        super.setUp()
+        fakeSearchUseCase = FakeSearchUseCase()
+        sut = RandomUserPresenter(searchUseCase: fakeSearchUseCase)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        fakeSearchUseCase = nil
+        sut = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func test_WHEN_setViewControllerIsCalled_GIVEN_aValidViewController_THEN_itShouldReturnTrue(){
+        let fakeViewController = FakeRandomUserViewController()
+        sut.setViewController(fakeViewController)
+        XCTAssertTrue(sut.viewController is RandomUserViewControllerProtocol)
     }
+    
+    func  test_WHEN_requestRandomUserIsCalled_GIVEN_searchFailed_THEN_alertDownloadFailedShouldBeTrueButtonShouldBeEnabled(){
+        fakeSearchUseCase.successCase = false
+        let fakeViewController = FakeRandomUserViewController()
+        sut.setViewController(fakeViewController)
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        sut.requestRandomUser()
+        XCTAssertTrue(fakeViewController.alertWasInitiated)
+        XCTAssertFalse(fakeViewController.buttonIsEnabled)
     }
+    
+    func test_WHEN_requestRandomUserIsCalled_GIVEN_searchSucceded_THEN_controllerReloadedShouldBeTrueButtonShouldBeEnabled(){
+        fakeSearchUseCase.successCase = true
+        let fakeViewController = FakeRandomUserViewController()
+        sut.setViewController(fakeViewController)
 
+        sut.requestRandomUser()
+        XCTAssertTrue(fakeViewController.viewReloaded)
+        XCTAssertFalse(fakeViewController.buttonIsEnabled)
+    }
 }

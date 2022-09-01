@@ -29,6 +29,19 @@
 		B9583FDC28C0101B006205E1 /* GetDisplayableUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FDB28C0101B006205E1 /* GetDisplayableUserService.swift */; };
 		B9583FDE28C0102E006205E1 /* RandomUserToDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FDD28C0102E006205E1 /* RandomUserToDisplay.swift */; };
 		B9583FE028C04258006205E1 /* InformationPrepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FDF28C04258006205E1 /* InformationPrepService.swift */; };
+		B9807A9928C1467200B5E6E7 /* SearchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807A9828C1467200B5E6E7 /* SearchUseCaseTests.swift */; };
+		B9807A9D28C1493B00B5E6E7 /* GetUserInfoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807A9C28C1493B00B5E6E7 /* GetUserInfoServiceTests.swift */; };
+		B9807A9F28C1494B00B5E6E7 /* GetThumbnailDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807A9E28C1494B00B5E6E7 /* GetThumbnailDataServiceTests.swift */; };
+		B9807AA128C1495C00B5E6E7 /* GetDisplayableUserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AA028C1495C00B5E6E7 /* GetDisplayableUserServiceTests.swift */; };
+		B9807AA328C1496B00B5E6E7 /* InformationPrepServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AA228C1496B00B5E6E7 /* InformationPrepServiceTests.swift */; };
+		B9807AA628C149CF00B5E6E7 /* FakeURLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AA528C149CF00B5E6E7 /* FakeURLRequestBuilder.swift */; };
+		B9807AA828C149DA00B5E6E7 /* FakeRESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AA728C149DA00B5E6E7 /* FakeRESTClient.swift */; };
+		B9807AAB28C14E4B00B5E6E7 /* FakeGetThumbnailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AAA28C14E4B00B5E6E7 /* FakeGetThumbnailDataService.swift */; };
+		B9807AAD28C14E6C00B5E6E7 /* FakeInformationPrepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AAC28C14E6C00B5E6E7 /* FakeInformationPrepService.swift */; };
+		B9807AB028C1546000B5E6E7 /* FakeGetUserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AAF28C1546000B5E6E7 /* FakeGetUserInfoService.swift */; };
+		B9807AB228C1546900B5E6E7 /* FakeGetDisplayableUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AB128C1546900B5E6E7 /* FakeGetDisplayableUserService.swift */; };
+		B9807AB528C1583100B5E6E7 /* FakeSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AB428C1583100B5E6E7 /* FakeSearchUseCase.swift */; };
+		B9807AB728C158CB00B5E6E7 /* FakeRandomUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9807AB628C158CB00B5E6E7 /* FakeRandomUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +80,19 @@
 		B9583FDB28C0101B006205E1 /* GetDisplayableUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDisplayableUserService.swift; sourceTree = "<group>"; };
 		B9583FDD28C0102E006205E1 /* RandomUserToDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserToDisplay.swift; sourceTree = "<group>"; };
 		B9583FDF28C04258006205E1 /* InformationPrepService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPrepService.swift; sourceTree = "<group>"; };
+		B9807A9828C1467200B5E6E7 /* SearchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCaseTests.swift; sourceTree = "<group>"; };
+		B9807A9C28C1493B00B5E6E7 /* GetUserInfoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInfoServiceTests.swift; sourceTree = "<group>"; };
+		B9807A9E28C1494B00B5E6E7 /* GetThumbnailDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetThumbnailDataServiceTests.swift; sourceTree = "<group>"; };
+		B9807AA028C1495C00B5E6E7 /* GetDisplayableUserServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDisplayableUserServiceTests.swift; sourceTree = "<group>"; };
+		B9807AA228C1496B00B5E6E7 /* InformationPrepServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPrepServiceTests.swift; sourceTree = "<group>"; };
+		B9807AA528C149CF00B5E6E7 /* FakeURLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLRequestBuilder.swift; sourceTree = "<group>"; };
+		B9807AA728C149DA00B5E6E7 /* FakeRESTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRESTClient.swift; sourceTree = "<group>"; };
+		B9807AAA28C14E4B00B5E6E7 /* FakeGetThumbnailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGetThumbnailDataService.swift; sourceTree = "<group>"; };
+		B9807AAC28C14E6C00B5E6E7 /* FakeInformationPrepService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeInformationPrepService.swift; sourceTree = "<group>"; };
+		B9807AAF28C1546000B5E6E7 /* FakeGetUserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGetUserInfoService.swift; sourceTree = "<group>"; };
+		B9807AB128C1546900B5E6E7 /* FakeGetDisplayableUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGetDisplayableUserService.swift; sourceTree = "<group>"; };
+		B9807AB428C1583100B5E6E7 /* FakeSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSearchUseCase.swift; sourceTree = "<group>"; };
+		B9807AB628C158CB00B5E6E7 /* FakeRandomUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRandomUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +248,8 @@
 		B9583FC228C00D26006205E1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B9807AAE28C1545000B5E6E7 /* Mocks */,
+				B9807A9828C1467200B5E6E7 /* SearchUseCaseTests.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -229,6 +257,7 @@
 		B9583FC328C00D2B006205E1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B9807AB328C1582700B5E6E7 /* Mocks */,
 				B9583FCD28C00F6C006205E1 /* RandomUserPresenterTests.swift */,
 				B9583FCF28C00F80006205E1 /* RandomUserPresenterBuilderTests.swift */,
 			);
@@ -238,6 +267,8 @@
 		B9583FC428C00D30006205E1 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				B9807A9B28C1474000B5E6E7 /* ProcessedResults */,
+				B9807A9A28C1473600B5E6E7 /* RawData */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -260,6 +291,62 @@
 				B9583FDF28C04258006205E1 /* InformationPrepService.swift */,
 			);
 			path = ProcessedResults;
+			sourceTree = "<group>";
+		};
+		B9807A9A28C1473600B5E6E7 /* RawData */ = {
+			isa = PBXGroup;
+			children = (
+				B9807AA928C14E2800B5E6E7 /* Mocks */,
+				B9807AA028C1495C00B5E6E7 /* GetDisplayableUserServiceTests.swift */,
+				B9807AA228C1496B00B5E6E7 /* InformationPrepServiceTests.swift */,
+			);
+			path = RawData;
+			sourceTree = "<group>";
+		};
+		B9807A9B28C1474000B5E6E7 /* ProcessedResults */ = {
+			isa = PBXGroup;
+			children = (
+				B9807AA428C149C000B5E6E7 /* Mocks */,
+				B9807A9C28C1493B00B5E6E7 /* GetUserInfoServiceTests.swift */,
+				B9807A9E28C1494B00B5E6E7 /* GetThumbnailDataServiceTests.swift */,
+			);
+			path = ProcessedResults;
+			sourceTree = "<group>";
+		};
+		B9807AA428C149C000B5E6E7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B9807AA528C149CF00B5E6E7 /* FakeURLRequestBuilder.swift */,
+				B9807AA728C149DA00B5E6E7 /* FakeRESTClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B9807AA928C14E2800B5E6E7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B9807AAA28C14E4B00B5E6E7 /* FakeGetThumbnailDataService.swift */,
+				B9807AAC28C14E6C00B5E6E7 /* FakeInformationPrepService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B9807AAE28C1545000B5E6E7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B9807AAF28C1546000B5E6E7 /* FakeGetUserInfoService.swift */,
+				B9807AB128C1546900B5E6E7 /* FakeGetDisplayableUserService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B9807AB328C1582700B5E6E7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B9807AB428C1583100B5E6E7 /* FakeSearchUseCase.swift */,
+				B9807AB628C158CB00B5E6E7 /* FakeRandomUserViewController.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,9 +474,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9807AB528C1583100B5E6E7 /* FakeSearchUseCase.swift in Sources */,
+				B9807AAD28C14E6C00B5E6E7 /* FakeInformationPrepService.swift in Sources */,
+				B9807AA128C1495C00B5E6E7 /* GetDisplayableUserServiceTests.swift in Sources */,
+				B9807AB028C1546000B5E6E7 /* FakeGetUserInfoService.swift in Sources */,
+				B9807A9D28C1493B00B5E6E7 /* GetUserInfoServiceTests.swift in Sources */,
+				B9807AA628C149CF00B5E6E7 /* FakeURLRequestBuilder.swift in Sources */,
+				B9807A9F28C1494B00B5E6E7 /* GetThumbnailDataServiceTests.swift in Sources */,
 				B9583FD028C00F80006205E1 /* RandomUserPresenterBuilderTests.swift in Sources */,
+				B9807A9928C1467200B5E6E7 /* SearchUseCaseTests.swift in Sources */,
 				B9583FCE28C00F6C006205E1 /* RandomUserPresenterTests.swift in Sources */,
+				B9807AB228C1546900B5E6E7 /* FakeGetDisplayableUserService.swift in Sources */,
+				B9807AB728C158CB00B5E6E7 /* FakeRandomUserViewController.swift in Sources */,
 				B9583FC828C00E30006205E1 /* URLRequestBuilderTests.swift in Sources */,
+				B9807AAB28C14E4B00B5E6E7 /* FakeGetThumbnailDataService.swift in Sources */,
+				B9807AA328C1496B00B5E6E7 /* InformationPrepServiceTests.swift in Sources */,
+				B9807AA828C149DA00B5E6E7 /* FakeRESTClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
