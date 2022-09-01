@@ -9,25 +9,75 @@
 /* Begin PBXBuildFile section */
 		B9583F8E28C0039B006205E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583F8D28C0039B006205E1 /* AppDelegate.swift */; };
 		B9583F9028C0039B006205E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583F8F28C0039B006205E1 /* SceneDelegate.swift */; };
-		B9583F9228C0039B006205E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583F9128C0039B006205E1 /* ViewController.swift */; };
 		B9583F9528C0039B006205E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9583F9328C0039B006205E1 /* Main.storyboard */; };
 		B9583F9728C0039E006205E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9583F9628C0039E006205E1 /* Assets.xcassets */; };
 		B9583F9A28C0039E006205E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9583F9828C0039E006205E1 /* LaunchScreen.storyboard */; };
+		B9583FA228C00811006205E1 /* RandomUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FA128C00811006205E1 /* RandomUserViewController.swift */; };
+		B9583FB428C0094C006205E1 /* WebClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FB328C0094C006205E1 /* WebClientProtocol.swift */; };
+		B9583FB628C0095E006205E1 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FB528C0095E006205E1 /* RESTClient.swift */; };
+		B9583FB828C00978006205E1 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FB728C00978006205E1 /* URLRequestBuilder.swift */; };
+		B9583FBA28C00989006205E1 /* BaseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FB928C00989006205E1 /* BaseEndpoint.swift */; };
+		B9583FC828C00E30006205E1 /* URLRequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FC728C00E30006205E1 /* URLRequestBuilderTests.swift */; };
+		B9583FCA28C00F3C006205E1 /* RandomUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FC928C00F3C006205E1 /* RandomUserPresenter.swift */; };
+		B9583FCC28C00F45006205E1 /* RandomUserPresenterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FCB28C00F45006205E1 /* RandomUserPresenterBuilder.swift */; };
+		B9583FCE28C00F6C006205E1 /* RandomUserPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FCD28C00F6C006205E1 /* RandomUserPresenterTests.swift */; };
+		B9583FD028C00F80006205E1 /* RandomUserPresenterBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FCF28C00F80006205E1 /* RandomUserPresenterBuilderTests.swift */; };
+		B9583FD228C00FA2006205E1 /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FD128C00FA2006205E1 /* SearchUseCase.swift */; };
+		B9583FD628C00FDF006205E1 /* RandomUserAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FD528C00FDF006205E1 /* RandomUserAPIResponse.swift */; };
+		B9583FD828C00FF3006205E1 /* GetUserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FD728C00FF3006205E1 /* GetUserInfoService.swift */; };
+		B9583FDA28C01005006205E1 /* GetThumbnailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FD928C01005006205E1 /* GetThumbnailDataService.swift */; };
+		B9583FDC28C0101B006205E1 /* GetDisplayableUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FDB28C0101B006205E1 /* GetDisplayableUserService.swift */; };
+		B9583FDE28C0102E006205E1 /* RandomUserToDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FDD28C0102E006205E1 /* RandomUserToDisplay.swift */; };
+		B9583FE028C04258006205E1 /* InformationPrepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9583FDF28C04258006205E1 /* InformationPrepService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9583FAB28C0084F006205E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9583F8228C0039B006205E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9583F8928C0039B006205E1;
+			remoteInfo = JustoTechChallenge;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B9583F8A28C0039B006205E1 /* JustoTechChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustoTechChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9583F8D28C0039B006205E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9583F8F28C0039B006205E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B9583F9128C0039B006205E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9583F9428C0039B006205E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9583F9628C0039E006205E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9583F9928C0039E006205E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9583F9B28C0039E006205E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9583FA128C00811006205E1 /* RandomUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewController.swift; sourceTree = "<group>"; };
+		B9583FA728C0084F006205E1 /* JustoTechChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustoTechChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9583FB328C0094C006205E1 /* WebClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClientProtocol.swift; sourceTree = "<group>"; };
+		B9583FB528C0095E006205E1 /* RESTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
+		B9583FB728C00978006205E1 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		B9583FB928C00989006205E1 /* BaseEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndpoint.swift; sourceTree = "<group>"; };
+		B9583FC728C00E30006205E1 /* URLRequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilderTests.swift; sourceTree = "<group>"; };
+		B9583FC928C00F3C006205E1 /* RandomUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPresenter.swift; sourceTree = "<group>"; };
+		B9583FCB28C00F45006205E1 /* RandomUserPresenterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPresenterBuilder.swift; sourceTree = "<group>"; };
+		B9583FCD28C00F6C006205E1 /* RandomUserPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPresenterTests.swift; sourceTree = "<group>"; };
+		B9583FCF28C00F80006205E1 /* RandomUserPresenterBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPresenterBuilderTests.swift; sourceTree = "<group>"; };
+		B9583FD128C00FA2006205E1 /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
+		B9583FD528C00FDF006205E1 /* RandomUserAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAPIResponse.swift; sourceTree = "<group>"; };
+		B9583FD728C00FF3006205E1 /* GetUserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInfoService.swift; sourceTree = "<group>"; };
+		B9583FD928C01005006205E1 /* GetThumbnailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetThumbnailDataService.swift; sourceTree = "<group>"; };
+		B9583FDB28C0101B006205E1 /* GetDisplayableUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDisplayableUserService.swift; sourceTree = "<group>"; };
+		B9583FDD28C0102E006205E1 /* RandomUserToDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserToDisplay.swift; sourceTree = "<group>"; };
+		B9583FDF28C04258006205E1 /* InformationPrepService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPrepService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B9583F8728C0039B006205E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9583FA428C0084F006205E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B9583F8C28C0039B006205E1 /* JustoTechChallenge */,
+				B9583FA828C0084F006205E1 /* JustoTechChallengeTests */,
 				B9583F8B28C0039B006205E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B9583F8A28C0039B006205E1 /* JustoTechChallenge.app */,
+				B9583FA728C0084F006205E1 /* JustoTechChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +108,158 @@
 		B9583F8C28C0039B006205E1 /* JustoTechChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B9583FB028C00923006205E1 /* Common */,
+				B9583FBB28C00B56006205E1 /* Landing */,
 				B9583F8D28C0039B006205E1 /* AppDelegate.swift */,
 				B9583F8F28C0039B006205E1 /* SceneDelegate.swift */,
-				B9583F9128C0039B006205E1 /* ViewController.swift */,
 				B9583F9328C0039B006205E1 /* Main.storyboard */,
 				B9583F9628C0039E006205E1 /* Assets.xcassets */,
 				B9583F9828C0039E006205E1 /* LaunchScreen.storyboard */,
 				B9583F9B28C0039E006205E1 /* Info.plist */,
 			);
 			path = JustoTechChallenge;
+			sourceTree = "<group>";
+		};
+		B9583FA828C0084F006205E1 /* JustoTechChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FBF28C00B86006205E1 /* Common */,
+				B9583FC128C00C54006205E1 /* Landing */,
+			);
+			path = JustoTechChallengeTests;
+			sourceTree = "<group>";
+		};
+		B9583FB028C00923006205E1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FB228C0093B006205E1 /* WebClient */,
+				B9583FB128C0092A006205E1 /* JustoAPIRequest */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B9583FB128C0092A006205E1 /* JustoAPIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FB728C00978006205E1 /* URLRequestBuilder.swift */,
+				B9583FB928C00989006205E1 /* BaseEndpoint.swift */,
+			);
+			path = JustoAPIRequest;
+			sourceTree = "<group>";
+		};
+		B9583FB228C0093B006205E1 /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FB328C0094C006205E1 /* WebClientProtocol.swift */,
+				B9583FB528C0095E006205E1 /* RESTClient.swift */,
+			);
+			path = WebClient;
+			sourceTree = "<group>";
+		};
+		B9583FBB28C00B56006205E1 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FBE28C00B7A006205E1 /* Domain */,
+				B9583FBD28C00B72006205E1 /* Presentation */,
+				B9583FBC28C00B67006205E1 /* Infrastructure */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		B9583FBC28C00B67006205E1 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FD328C00FB3006205E1 /* RawData */,
+				B9583FD428C00FC6006205E1 /* ProcessedResults */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B9583FBD28C00B72006205E1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FA128C00811006205E1 /* RandomUserViewController.swift */,
+				B9583FC928C00F3C006205E1 /* RandomUserPresenter.swift */,
+				B9583FCB28C00F45006205E1 /* RandomUserPresenterBuilder.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B9583FBE28C00B7A006205E1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FD128C00FA2006205E1 /* SearchUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B9583FBF28C00B86006205E1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FC028C00BD1006205E1 /* JustoAPIRequest */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B9583FC028C00BD1006205E1 /* JustoAPIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FC728C00E30006205E1 /* URLRequestBuilderTests.swift */,
+			);
+			path = JustoAPIRequest;
+			sourceTree = "<group>";
+		};
+		B9583FC128C00C54006205E1 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FC228C00D26006205E1 /* Domain */,
+				B9583FC328C00D2B006205E1 /* Presentation */,
+				B9583FC428C00D30006205E1 /* Infrastructure */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		B9583FC228C00D26006205E1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B9583FC328C00D2B006205E1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FCD28C00F6C006205E1 /* RandomUserPresenterTests.swift */,
+				B9583FCF28C00F80006205E1 /* RandomUserPresenterBuilderTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B9583FC428C00D30006205E1 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B9583FD328C00FB3006205E1 /* RawData */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FD528C00FDF006205E1 /* RandomUserAPIResponse.swift */,
+				B9583FD728C00FF3006205E1 /* GetUserInfoService.swift */,
+				B9583FD928C01005006205E1 /* GetThumbnailDataService.swift */,
+			);
+			path = RawData;
+			sourceTree = "<group>";
+		};
+		B9583FD428C00FC6006205E1 /* ProcessedResults */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FDB28C0101B006205E1 /* GetDisplayableUserService.swift */,
+				B9583FDD28C0102E006205E1 /* RandomUserToDisplay.swift */,
+				B9583FDF28C04258006205E1 /* InformationPrepService.swift */,
+			);
+			path = ProcessedResults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +282,24 @@
 			productReference = B9583F8A28C0039B006205E1 /* JustoTechChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B9583FA628C0084F006205E1 /* JustoTechChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9583FAD28C0084F006205E1 /* Build configuration list for PBXNativeTarget "JustoTechChallengeTests" */;
+			buildPhases = (
+				B9583FA328C0084F006205E1 /* Sources */,
+				B9583FA428C0084F006205E1 /* Frameworks */,
+				B9583FA528C0084F006205E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9583FAC28C0084F006205E1 /* PBXTargetDependency */,
+			);
+			name = JustoTechChallengeTests;
+			productName = JustoTechChallengeTests;
+			productReference = B9583FA728C0084F006205E1 /* JustoTechChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +312,11 @@
 				TargetAttributes = {
 					B9583F8928C0039B006205E1 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					B9583FA628C0084F006205E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+						TestTargetID = B9583F8928C0039B006205E1;
 					};
 				};
 			};
@@ -116,6 +334,7 @@
 			projectRoot = "";
 			targets = (
 				B9583F8928C0039B006205E1 /* JustoTechChallenge */,
+				B9583FA628C0084F006205E1 /* JustoTechChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +350,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9583FA528C0084F006205E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +364,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9583F9228C0039B006205E1 /* ViewController.swift in Sources */,
+				B9583FA228C00811006205E1 /* RandomUserViewController.swift in Sources */,
+				B9583FBA28C00989006205E1 /* BaseEndpoint.swift in Sources */,
+				B9583FDC28C0101B006205E1 /* GetDisplayableUserService.swift in Sources */,
+				B9583FB428C0094C006205E1 /* WebClientProtocol.swift in Sources */,
+				B9583FD828C00FF3006205E1 /* GetUserInfoService.swift in Sources */,
+				B9583FDA28C01005006205E1 /* GetThumbnailDataService.swift in Sources */,
 				B9583F8E28C0039B006205E1 /* AppDelegate.swift in Sources */,
+				B9583FCA28C00F3C006205E1 /* RandomUserPresenter.swift in Sources */,
+				B9583FE028C04258006205E1 /* InformationPrepService.swift in Sources */,
+				B9583FD228C00FA2006205E1 /* SearchUseCase.swift in Sources */,
+				B9583FB628C0095E006205E1 /* RESTClient.swift in Sources */,
+				B9583FD628C00FDF006205E1 /* RandomUserAPIResponse.swift in Sources */,
+				B9583FCC28C00F45006205E1 /* RandomUserPresenterBuilder.swift in Sources */,
+				B9583FDE28C0102E006205E1 /* RandomUserToDisplay.swift in Sources */,
 				B9583F9028C0039B006205E1 /* SceneDelegate.swift in Sources */,
+				B9583FB828C00978006205E1 /* URLRequestBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9583FA328C0084F006205E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9583FD028C00F80006205E1 /* RandomUserPresenterBuilderTests.swift in Sources */,
+				B9583FCE28C00F6C006205E1 /* RandomUserPresenterTests.swift in Sources */,
+				B9583FC828C00E30006205E1 /* URLRequestBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9583FAC28C0084F006205E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9583F8928C0039B006205E1 /* JustoTechChallenge */;
+			targetProxy = B9583FAB28C0084F006205E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B9583F9328C0039B006205E1 /* Main.storyboard */ = {
@@ -336,6 +593,55 @@
 			};
 			name = Release;
 		};
+		B9583FAE28C0084F006205E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z24Z5QFBHM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nataDev.JustoTechChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustoTechChallenge.app/JustoTechChallenge";
+			};
+			name = Debug;
+		};
+		B9583FAF28C0084F006205E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z24Z5QFBHM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nataDev.JustoTechChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustoTechChallenge.app/JustoTechChallenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +659,15 @@
 			buildConfigurations = (
 				B9583F9F28C0039E006205E1 /* Debug */,
 				B9583FA028C0039E006205E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9583FAD28C0084F006205E1 /* Build configuration list for PBXNativeTarget "JustoTechChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9583FAE28C0084F006205E1 /* Debug */,
+				B9583FAF28C0084F006205E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
